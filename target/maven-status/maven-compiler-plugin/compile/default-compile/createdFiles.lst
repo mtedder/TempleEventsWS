@@ -1,0 +1,3 @@
+com\gc\temple\ws\TempleRestService.class
+com\gc\temple\db\dao\TampleEventsDao.class
+com\gc\temple\db\dto\Events.class
