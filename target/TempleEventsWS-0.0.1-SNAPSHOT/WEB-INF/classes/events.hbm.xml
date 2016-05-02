@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.gc.temple.db.dto.Events" table="events">
+		<id name="eventKey" type="int" column="eventKey">
+			 <generator class="native"/>			
+		</id>
+
+		<property name="eventname" type="string">
+			<column name="eventname"/>
+		</property>
+		<property name="eventdesc" type="string">
+			<column name="eventdesc"/>
+		</property>	
+		
+		<property name="eventlocation" type="string">
+			<column name="eventlocation"/>
+		</property>
+		<property name="eventdatetime" type="date">
+			<column name="eventdatetime"/>
+		</property>		
+	</class>
+</hibernate-mapping>
