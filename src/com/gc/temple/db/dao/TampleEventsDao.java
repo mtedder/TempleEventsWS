@@ -39,6 +39,7 @@ public class TampleEventsDao {
 	public TampleEventsDao() {
 		try {
 			/**Load the hibernate.cfg.xml from the classpath**/
+			System.out.println(System.getenv("DATABASE_URL_PARAMS"));
 			Configuration cfg = new Configuration();
 			cfg.setProperty("hibernate.connection.url", System.getenv("DATABASE_URL_PARAMS"));
 			cfg.setProperty("hibernate.connection.username", System.getenv("DATABASE_USERNAME"));
