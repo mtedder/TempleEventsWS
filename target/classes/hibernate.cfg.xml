@@ -7,9 +7,6 @@
 <session-factory>
     <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
     
-    <property name="hibernate.connection.url"></property>
-    <property name="hibernate.connection.username"></property>
-    <property name="hibernate.connection.password"></property>
    <!--  <property name="hibernate.connection.url">jdbc:postgresql://ec2-54-204-41-46.compute-1.amazonaws.com:5432/dcjkglfnboo3h8?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</property> -->
 <!--     <property name="hibernate.connection.url">jdbc:postgres://ec2-54-204-41-46.compute-1.amazonaws.com:5432/dcjkglfnboo3h8?sslmode=require</property> --> 	
     <!-- <property name="hibernate.connection.username">vrubykezfzlscq</property>
