@@ -48,8 +48,8 @@ public class TampleEventsDao {
 			cfg.setProperty("hibernate.connection.username", System.getenv("DATABASE_USERNAME"));
 			cfg.setProperty("hibernate.connection.password", System.getenv("DATABASE_PASSWORD"));
 			
-			factory = cfg.configure().buildSessionFactory();
-//			factory = cfg.buildSessionFactory();
+//			factory = cfg.configure().buildSessionFactory();
+			factory = cfg.buildSessionFactory();
 		} catch (Throwable ex) {
 			System.err.println("Failed to create sessionFactory object." + ex);
 			throw new ExceptionInInitializerError(ex);
