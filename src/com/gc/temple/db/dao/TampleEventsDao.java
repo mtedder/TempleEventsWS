@@ -38,7 +38,13 @@ public class TampleEventsDao {
 	 */
 	public TampleEventsDao() {
 		try {
-			factory = new Configuration().configure().buildSessionFactory();
+			/**Load the hibernate.cfg.xml from the classpath**/
+			Configuration cfg = new Configuration();
+			cfg.setProperty("hibernate.connection.url", System.getenv("DATABASE_URL_PARAMS"));
+			cfg.setProperty("hibernate.connection.username", System.getenv("DATABASE_USERNAME"));
+			cfg.setProperty("hibernate.connection.password", System.getenv("DATABASE_PWD"));
+			
+			factory = cfg.configure().buildSessionFactory();
 		} catch (Throwable ex) {
 			System.err.println("Failed to create sessionFactory object." + ex);
 			throw new ExceptionInInitializerError(ex);

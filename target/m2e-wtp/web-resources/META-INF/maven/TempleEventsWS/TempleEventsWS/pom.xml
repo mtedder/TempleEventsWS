@@ -41,7 +41,9 @@
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<!-- Needed to include hibernate xml files -->
+		<!-- Needed to include hibernate xml files 
+		ref:http://stackoverflow.com/questions/18193663/maven-build-doesnt-include-hibernate-cfg-xml-or-hbm-xml-files
+		-->
 		<resources>
 			<resource>
 				<directory>src</directory>
