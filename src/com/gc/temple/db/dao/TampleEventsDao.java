@@ -44,6 +44,7 @@ public class TampleEventsDao {
 			System.out.println(System.getenv("DATABASE_PASSWORD"));
 
 			Configuration cfg = new Configuration();
+			cfg.setProperty("hibernate.connection.driver_class", "org.postgresql.Driver");
 			cfg.setProperty("hibernate.connection.url", System.getenv("DATABASE_URL_PARAMS"));
 			cfg.setProperty("hibernate.connection.username", System.getenv("DATABASE_USERNAME"));
 			cfg.setProperty("hibernate.connection.password", System.getenv("DATABASE_PASSWORD"));
