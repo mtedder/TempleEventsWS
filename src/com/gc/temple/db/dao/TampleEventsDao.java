@@ -39,9 +39,9 @@ public class TampleEventsDao {
 	public TampleEventsDao() {
 		try {
 			/**Load the hibernate.cfg.xml from the classpath**/
-			System.out.println(System.getenv("DATABASE_URL_PARAMS"));
-			System.out.println(System.getenv("DATABASE_USERNAME"));
-			System.out.println(System.getenv("DATABASE_PASSWORD"));
+//			System.out.println(System.getenv("DATABASE_URL_PARAMS"));
+//			System.out.println(System.getenv("DATABASE_USERNAME"));
+//			System.out.println(System.getenv("DATABASE_PASSWORD"));
 
 			Configuration cfg = new Configuration();
 			//cfg.setProperty("hibernate.connection.driver_class", "org.postgresql.Driver");
